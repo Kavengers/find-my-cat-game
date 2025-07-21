@@ -1,69 +1,38 @@
-# React + TypeScript + Vite
+# 🐾 Find My Happi Happi Cat 🐾
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Find My Happi Happi Cat**, a fun and brain-teasing memory game where your goal is to reveal all hidden tiles in the correct sequence — without making a mistake! Can you find the Happi Happi Cat hidden behind your memory?
 
-Currently, two official plugins are available:
+## 🎮 Game Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this memory game, you're presented with a **3x3 grid** of hidden tiles. Each tile contains a **unique number from 1 to 9**. Your task is to reveal the entire grid in **a single flawless round** by remembering the location of each number.
 
-## Expanding the ESLint configuration
+### 🔍 How to Play
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Tap on any tile to reveal the hidden number underneath.
+2. Memorize the number and its position.
+3. Continue revealing tiles in an attempt to uncover all 9 unique numbers **in one round without repeating or failing**.
+4. If you tap a tile incorrectly or make a mistake, the tiles will **flip back**, but the **positions stay the same**.
+5. Use your memory to try again until you succeed!
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🎯 Game Objective
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Reveal all 9 tiles in one continuous round** without making a mistake.
+- Upon successful completion, the grid will **regenerate with a new shuffled layout** for a fresh challenge.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ✨ Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🧠 **Memory-Based Gameplay**: Train your brain by remembering numbers and their locations.
+- 🔁 **Reshuffle Button**: Tap the reshuffle button to reset the grid before finishing — great if you want a fresh puzzle!
+- 🎯 **Moves Counter**: Track how many moves it takes to complete the grid. The counter is displayed at the top-right corner.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Technologies Used
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Pure GOATED ReactJS with Vite no NextJS bullshit here 
+
+## 🚀 Getting Started
+
+To run the game locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/find-my-happi-happi-cat.git
