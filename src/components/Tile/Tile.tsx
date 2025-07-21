@@ -1,4 +1,7 @@
 import "./styles.css"
+import failGif from "../../assets/gifs/fail.gif"
+import winGif from "../../assets/gifs/win.gif"
+
 export type TileType = {
     value: number;
     flipped: boolean; 
@@ -17,7 +20,7 @@ export const Tile: React.FC<TileType> = ({ value, flipped, onClick, passed, fail
         className={`tile ${flipped && !passed ? "flip" : ""} ${passed ? "passed" : ""}`}
         onClick={handleOnClick}>
         <div className="tile-inner">
-            <div className="tile-front">{passed && <img src={`../src/assets/gifs/win.gif`}/>} {failed && <img src={`../src/assets/gifs/fail.gif`}/>}</div>
+            <div className="tile-front">{passed && <img src={winGif}/>} {failed && <img src={failGif}/>}</div>
             <div className="tile-back"><p>{value}</p></div>
         </div>
     </div>
